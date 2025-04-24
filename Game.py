@@ -43,8 +43,8 @@ while max(players_score) < max_score:
                 break
             else:
                 print("You rolled a: ", value)
-
-            print("Your score is: ", current_score)
+                current_score += value
+                print("Your score is: ", current_score)
 
         players_score[players_idx] += current_score
         print("Your total score is: ", players_score[players_idx])
